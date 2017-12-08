@@ -25,7 +25,13 @@ class App extends React.Component {
           }
         })
       }
-    });
+    },
+    {
+      swipeEnabled: false,
+      lazyLoad: true,
+      animationEnabled: false,
+      tabBarPosition: 'bottom',
+  });
 
     return (
       <MainNavigator />
