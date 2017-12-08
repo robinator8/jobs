@@ -1,0 +1,38 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js
+
+PATH: 
+  C:\Users\Bobert\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\cmd;C:\ProgramData\Oracle\Java\javapath;C:\Python27;C:\Python27\Scripts;C:\Program Files (x86)\Razer Chroma SDK\bin;C:\Program Files\Razer Chroma SDK\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Users\Bobert\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Microsoft SQL Server\130\Tools\Binn;C:\Program Files (x86)\Xoreax\IncrediBuild;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\Program Files\MySQL\MySQL Utilities 1.6;C:\Program Files (x86)\Skype\Phone;C:\Program Files\Git\cmd;C:\Program Files\dotnet;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Brackets\command;C:\geckodriver;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs;C:\Program Files\Java\jdk1.8.0_144\bin;C:\Users\Bobert\AppData\Local\Android\sdk\platform-tools;C:\Program Files (x86)\Yarn\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\Go\bin;C:\php;C:\Users\Bobert\.cargo\bin;C:\Users\Bobert\scoop\shims;C:\Ruby24-x64\bin;C:\Users\Bobert\Anaconda3;C:\Users\Bobert\Anaconda3\Scripts;C:\Users\Bobert\Anaconda3\Library\bin;C:\Program Files (x86)\Microsoft VS Code\bin;C:\Program Files\Heroku\bin;C:\Program Files\Nanobox;C:\Users\Bobert\AppData\Local\atom\bin;C:\Users\Bobert\AppData\Roaming\npm;C:\Users\Bobert\AppData\Local\Yarn\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+
+Yarn version: 
+  1.1.0
+
+Node version: 
+  8.6.0
+
+Platform: 
+  win32 x64
+
+npm manifest: 
+  {
+    "main": "node_modules/expo/AppEntry.js",
+    "private": true,
+    "dependencies": {
+      "expo": "^23.0.0",
+      "react": "16.0.0",
+      "react-native": "https://github.com/expo/react-native/archive/sdk-23.0.0.tar.gz",
+      "react-navigation": "^1.0.0-beta.21"
+    },
+    "devDependencies": {
+      "eslint-config-rallycoding": "^3.2.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: EPERM: operation not permitted, unlink 'X:\projects\advanced-course\jobs\node_modules\boom\lib'
