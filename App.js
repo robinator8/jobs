@@ -23,6 +23,9 @@ class App extends React.Component {
               Settings: { screen: SettingsScreen }
             })
           }
+        },
+        {
+          tabBarPosition: 'bottom',
         })
       }
     },
