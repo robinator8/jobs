@@ -16,9 +16,6 @@
     },
     "ios": {
       "supportsTablet": true
-    },
-    "androidStatusBar": {
-      "barStyle": "content",
     }
   }
 }

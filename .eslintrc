@@ -1,3 +1,7 @@
 {
-  "extends": "rallycoding"
+  "extends": "rallycoding",
+  "rules": {
+    "prefer-const": 0,
+    "react/sort-comp": 0
+  }
 }

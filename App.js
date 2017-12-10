@@ -1,6 +1,8 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
 import { TabNavigator, StackNavigator } from 'react-navigation';
+import { Provider } from 'react-redux';
+
+import store from './store';
 import AuthScreen from './screens/AuthScreen';
 import WelcomeScreen from './screens/WelcomeScreen';
 import MapScreen from './screens/MapScreen';
@@ -11,16 +13,16 @@ import SettingsScreen from './screens/SettingsScreen';
 class App extends React.Component {
   render() {
     const MainNavigator = TabNavigator({
-      Welcome: { screen: WelcomeScreen },
-      Auth: { screen: AuthScreen },
-      Main: {
+      welcome: { screen: WelcomeScreen },
+      auth: { screen: AuthScreen },
+      main: {
         screen: TabNavigator({
-          Map: { screen: MapScreen },
-          Deck: { screen: DeckScreen },
-          Review: {
+          map: { screen: MapScreen },
+          deck: { screen: DeckScreen },
+          review: {
             screen: StackNavigator({
-              Review: { screen: ReviewScreen },
-              Settings: { screen: SettingsScreen }
+              review: { screen: ReviewScreen },
+              settings: { screen: SettingsScreen }
             })
           }
         },
@@ -30,14 +32,18 @@ class App extends React.Component {
       }
     },
     {
+      navigationOptions: {
+        tabBarVisible: false
+      },
       swipeEnabled: false,
-      lazyLoad: true,
+      lazy: true,
       animationEnabled: false,
-      tabBarPosition: 'bottom',
   });
 
     return (
-      <MainNavigator />
+      <Provider store={store}>
+        <MainNavigator />
+      </Provider>
     );
   }
 }
