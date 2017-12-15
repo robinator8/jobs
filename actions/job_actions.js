@@ -4,7 +4,8 @@ import qs from 'qs';
 
 import {
   FETCH_JOBS,
-  LIKE_JOB
+  LIKE_JOB,
+  CLEAR_LIKED_JOBS
 } from './types';
 
 const JOB_ROOT_URL = 'http://api.indeed.com/ads/apisearch?';
@@ -37,4 +38,8 @@ export const fetchJobs = (region, callback) => async dispatch => {
 export const likeJob = (job) => ({
   payload: job,
   type: LIKE_JOB,
+});
+
+export const clearLikedJobs = () => ({
+  type: CLEAR_LIKED_JOBS
 });
